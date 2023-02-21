@@ -1,4 +1,4 @@
-# LEMP Installation, Nginix,Mysql and Php shell script for ubuntu OS's.
+## LEMP Installation, Nginix,Mysql and Php shell script for ubuntu OS's.
 
   
    **Automated installation script for LEMP current versions of Nginx, mysql and php for ubuntu OS's.**
@@ -28,6 +28,12 @@ $ git clone https://github.com/mnhsaki/devops.git
 
    * Download the script.
 
+* **Step 3:** Change directory
+
+```
+$ cd /LEMP-Ubuntu
+```
+
    * change the file permission with 777 
   
 ```
@@ -39,6 +45,7 @@ sudo chmod 777 lemp.sh
 ``` 
 sudo ./lemp.sh  
 ```
+
 
 ## Note:
  
@@ -76,11 +83,29 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your-pas
    
 ***
 
+## add new extension:
+
+```
+sudo apt install php {extension-name}
+```
+
+### Notes for PHP ###
+
+1. **Default vhost created on VM at:** /etc/nginx/sites-available/php-vhost
+2. **PHP INFO at:** http://{serverip}/info.php
+3. **display_errors:** on;
+4. **short_open_tags:** on;
+5. **added extension:** 11;
+
+
 ### Notes for MySQL ###
 
 1. **default root user:** root
 2. **default root pass:** password
 
 
+### Notes for JAVA ###
+
+1. **default java version:** 11.0.15
 
 
