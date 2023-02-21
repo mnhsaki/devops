@@ -81,7 +81,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your-pas
     * php5-xmlrpc
     * php5-sqlite
    
-***
+
 
 ## add new extension:
 
@@ -89,6 +89,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your-pas
 sudo apt install php {extension-name}
 ```
 
+***
 ### Notes for PHP ###
 
 1. **Default vhost created on VM at:** /etc/nginx/sites-available/php-vhost
