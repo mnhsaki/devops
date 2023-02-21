@@ -65,7 +65,7 @@ sudo certbot --apache -d example.com -d www.example.com
 ### Step 3 — Checking your Certificate Status
 
 
-At this point, you can ensure that Certbot created your SSL certificate correctly by using the [SSL Server Test] (https://www.ssllabs.com/ssltest/) from the cloud security company Qualys[Qualys](https://www.qualys.com/).
+At this point, you can ensure that Certbot created your SSL certificate correctly by using the [SSL Server Test](https://www.ssllabs.com/ssltest/) from the cloud security company [Qualys](https://www.qualys.com/).
 
 
 
