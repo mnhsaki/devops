@@ -1,6 +1,4 @@
 ## Secure Apache & Nginx with Let's Encrypt on CentOS 
-
-### Setup Guide
 ## Prerequiste:
   
    * Cent OS.
@@ -9,9 +7,10 @@
 
    * Web Server 
 
-### Setup Guide
+## Setup Guide
 
-* **Step 1: To add the CentOS 7 & 8 EPEL repository, run the following command:** 
+### Step 1:
+* To add the CentOS 7 & 8 EPEL repository, run the following command:
 
 > Make sure you are the root user otherwise some resources wont be installed.
 >
@@ -23,7 +22,7 @@ $ sudo su
 sudo yum install epel-release
 ```
 
-* **2:** Cloning the repository
+* Cloning the repository
 
 ```
 $ git clone https://github.com/mnhsaki/devops.git
@@ -31,7 +30,7 @@ $ git clone https://github.com/mnhsaki/devops.git
 
    * Download the script.
 
-* **3:** Change directory
+* Change directory
 
 ```
 $ cd /letsencrypt/
@@ -50,7 +49,7 @@ sudo ./certbot.sh
 ```
 
 
-* **Step 2 — Obtaining a Certificate**
+### Step 2 — Obtaining a Certificate
 
 Now that Certbot is installed, you can use it to request an SSL certificate for your domain.
 
@@ -63,14 +62,14 @@ sudo certbot --apache -d example.com -d www.example.com
 ```
 
 
-* **Step 3 — Checking your Certificate Status**
+### Step 3 — Checking your Certificate Status
 
 
 At this point, you can ensure that Certbot created your SSL certificate correctly by using the [SSL Server Test] (https://www.ssllabs.com/ssltest/) from the cloud security company Qualys[Qualys](https://www.qualys.com/).
 
 
 
-* **Step 4 — Setting Up Auto Renewal**
+### Step 4 — Setting Up Auto Renewal
 
 Edit the crontab to create a new job that will run the renewal twice per day. To edit the crontab for the root user, run:
 

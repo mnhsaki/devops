@@ -3,7 +3,6 @@
   
    **Automated installation script for LEMP current versions of Nginx, mysql and php for ubuntu OS's.**
 
-   ### Setup Guide
 ## Prerequiste:
   
    * Ubuntu OS.
