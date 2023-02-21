@@ -4,13 +4,15 @@
    **Automated installation script for LEMP current versions of Nginx, mysql and php for ubuntu OS's.**
 
    ### Setup Guide
-
-* Make sure you have already installed Ubuntu to continue. more at [ubuntu.com](http://www.ubuntu.com/)
+## Prerequiste:
+  
+   * Ubuntu OS.
+  
+   * Make sure you have already installed Ubuntu to continue. more at [ubuntu.com](http://www.ubuntu.com/)
 
 * **Step 1:** Cloning the repository
 
 ```
-$ cd /usr/local/
 $ git clone https://github.com/mnhsaki/devops.git
 ```
 
@@ -18,27 +20,22 @@ $ git clone https://github.com/mnhsaki/devops.git
 
    * change the file permission with 777 
   
-     ` ` ` sudo chmod 777 lemp.sh ` ` `
+``` sudo chmod 777 lemp.sh 
+```
 
    * Run the script with sudo.  
   
-     ` ` ` sudo ./lemp.sh  ` ` `
+``` sudo ./lemp.sh  
+```
 
-  
-     
-## Prerequiste:
-  
-   * Ubuntu OS.
-  
 ## Note:
  
    You can provide your own mysql root password by changing the default password "password" provided in this shell script lemp.sh-line no:177
  
-   ` ` ` ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your-password'; ` ` `
+``` ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your-password';
+```
 
-
-
-   This repo contains a SH script to setup a LEMP Server { Linux + Nginx + MySQL + PHP FPM } for Phalcon PHP development environment.
+   This repo contains a SH script to setup a LEMP + Server { Linux + Nginx + MySQL + PHP FPM + JAVA + phpMyadmin} for development environment.
 
 
 

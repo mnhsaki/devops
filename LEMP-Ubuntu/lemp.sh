@@ -217,12 +217,53 @@ echo
 echo
 fi
 
-
-
 #Java_installation
 
-sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
 
+#phpMyadmin installation
+
+if [ ! -x /usr/bin/phpMyadmin ]; then
+echo
+echo
+        echo "INSTALLING phpMyadmin"
+echo
+echo
+        sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
+echo
+echo
+        echo "SUCESSFULLY INSTALLED phpMyadmin"
+else
+echo
+echo
+        echo "ALREADY INSTALLED phpMyadmin"
+echo
+echo
+fi
+
+#phpMyadmin installation
+
+
+#git installation
+
+if [ ! -x /usr/bin/git ]; then
+echo
+echo
+        echo "INSTALLING git"
+echo
+echo
+        sudo apt install git -y
+echo
+echo
+        echo "SUCESSFULLY INSTALLED git"
+else
+echo
+echo
+        echo "ALREADY INSTALLED git"
+echo
+echo
+fi
+
+#git installation
 
 
 
