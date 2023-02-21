@@ -8,9 +8,9 @@ apt-get -y update && sudo apt upgrade
 apt-get -y install python-software-properties software-properties-common ca-certificates lsb-release apt-transport-https
 
 
-#nginx_installation
+#Apache_installation
 
-if [ ! -x /lib/systemd/system/nginx.service.d ]; then
+if [ ! -x /lib/systemd/system/apache2.service.d ]; then
 
         echo "INSTALLING LEMP"
 echo    
@@ -18,29 +18,32 @@ echo
         echo "INSTALLING nginx"
 echo
 echo
-        apt install nginx -y
+        sudo apt-get install apache2 apache2-doc apache2-npm-prefork apache2-utils libexpat1 ssl-cert -y
 echo
 echo
-        ufw app info "Nginx Full"
+        ufw app info "Apache Full"
 echo
 echo
-        ufw allow in "Nginx Full"
-	systemctl enable nginx
-	systemctl start nginx
+        sudo ufw allow 'Apache'
+	    systemctl enable apache2
+	    systemctl start apache2
 echo
 echo
-        echo "SUCESSFULLY INSTALLED nginx";
+        echo "SUCESSFULLY INSTALLED Apache";
 
 else
 echo
 echo
 	
-	echo "ALREADY INSTALLED nginx"
+	echo "ALREADY INSTALLED Apache"
 echo
 echo
 fi
 
 #nginx_installation
+
+
+
 
 #php_installation
 if [ ! -x /usr/bin/php ]; then
@@ -66,6 +69,15 @@ fi
 #php_installation
 
 echo "# vHosts crete Start. "
+
+
+sudo mkdir -p /var/www/html/
+
+sudo chown -R $USER:$USER /var/www/html
+
+sudo chmod -R 755 /var/www/html/index.html
+
+sudo nano 
 
 >| /etc/nginx/sites-available/default
 cat <<EOF > /etc/nginx/sites-available/default
