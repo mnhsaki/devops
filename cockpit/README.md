@@ -118,7 +118,7 @@ Is the information correct? [Y/n]
 
 ## Assigning Sudo Rights to a User
 
-# CentOS 7, CentOS Stream 8, and CentOS Stream 9
+CentOS 7, CentOS Stream 8, and CentOS Stream 9
 
 1. To assign sudo privileges to a user in CentOS 7, CentOS Stream 8, and CentOS Stream 9, you must add the user to the wheel group. To add the user to this group, enter the following command:
 
