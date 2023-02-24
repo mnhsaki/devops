@@ -7,7 +7,7 @@
 
    * Web Server 
 
-## Setup Guide
+## ✅ Setup Guide
 
 ### Step 1:
 * To add the CentOS 7 & 8 EPEL repository, run the following command:
